@@ -162,4 +162,12 @@ export const projects = [
       ],
     },
   },
+  {
+    slug: "text-to-sql-fine-tuning",
+    comingSoon: true,
+    title: "Fine-Tuning an LLM for Text-to-SQL",
+    summary:
+      "Fine-tuning an open-weight LLM to translate natural language into SQL against a real public dataset schema — eval-first methodology, LoRA fine-tuning, and a full failure analysis.",
+    tags: ["LLM Fine-Tuning", "Text-to-SQL", "LoRA", "Evaluation"],
+  },
 ];

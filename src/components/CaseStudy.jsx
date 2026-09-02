@@ -8,7 +8,7 @@ export default function CaseStudy() {
   const project = projects.find((p) => p.slug === slug);
   const [lightbox, setLightbox] = useState(null);
 
-  if (!project) return <Navigate to="/" replace />;
+  if (!project || !project.caseStudy) return <Navigate to="/" replace />;
 
   const cs = project.caseStudy;
 
