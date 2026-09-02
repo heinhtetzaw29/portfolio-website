@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="mx-auto max-w-6xl border-t border-ink px-5 py-12 md:px-10 md:py-16"
+      className="mx-auto max-w-6xl px-5 pb-12 pt-4 md:px-10 md:pb-16 md:pt-8"
     >
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
         {projects.map((project) => (
