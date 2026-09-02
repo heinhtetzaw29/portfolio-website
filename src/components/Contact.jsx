@@ -16,7 +16,7 @@ export default function Contact() {
             src={profile.headshotUrl}
             alt={profile.name}
             onError={() => setImgFailed(true)}
-            className="h-full w-full object-cover grayscale"
+            className="h-full w-full object-cover"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center text-section text-muted">
