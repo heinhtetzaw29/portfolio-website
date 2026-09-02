@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { projects } from "../data";
+import Lightbox from "./Lightbox";
 
 export default function CaseStudy() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
+  const [lightbox, setLightbox] = useState(null);
 
   if (!project) return <Navigate to="/" replace />;
 
@@ -47,7 +50,12 @@ export default function CaseStudy() {
       {/* Hero image */}
       <section className="mt-12">
         <div className="relative w-full overflow-hidden border border-ink bg-white">
-          <img src={cs.heroImage} alt={cs.heroCaption} className="w-full object-contain" />
+          <img
+            src={cs.heroImage}
+            alt={cs.heroCaption}
+            onClick={() => setLightbox({ src: cs.heroImage, alt: cs.heroCaption })}
+            className="w-full cursor-zoom-in object-contain transition-opacity hover:opacity-90"
+          />
         </div>
         <p className="mt-3 text-label uppercase text-muted">{cs.heroCaption}</p>
       </section>
@@ -66,7 +74,12 @@ export default function CaseStudy() {
               <p className="mb-6 text-body text-subtle">{s.body}</p>
               {s.image && (
                 <figure className="border border-ink bg-white p-2">
-                  <img src={s.image} alt={s.imageCaption} className="w-full object-contain" />
+                  <img
+                    src={s.image}
+                    alt={s.imageCaption}
+                    onClick={() => setLightbox({ src: s.image, alt: s.imageCaption })}
+                    className="w-full cursor-zoom-in object-contain transition-opacity hover:opacity-90"
+                  />
                   {s.imageCaption && (
                     <figcaption className="mt-2 px-1 pb-1 text-label uppercase text-muted">
                       {s.imageCaption}
@@ -116,7 +129,12 @@ export default function CaseStudy() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             {cs.dashboardImages.map((img) => (
               <figure key={img.src} className="border border-ink bg-white p-2">
-                <img src={img.src} alt={img.caption} className="w-full object-contain" />
+                <img
+                  src={img.src}
+                  alt={img.caption}
+                  onClick={() => setLightbox({ src: img.src, alt: img.caption })}
+                  className="w-full cursor-zoom-in object-contain transition-opacity hover:opacity-90"
+                />
                 <figcaption className="mt-2 px-1 pb-1 text-label uppercase text-muted">
                   {img.caption}
                 </figcaption>
@@ -150,6 +168,10 @@ export default function CaseStudy() {
             </a>
           )}
         </section>
+      )}
+
+      {lightbox && (
+        <Lightbox src={lightbox.src} alt={lightbox.alt} onClose={() => setLightbox(null)} />
       )}
     </main>
   );
