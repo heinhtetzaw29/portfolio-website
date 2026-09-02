@@ -7,7 +7,7 @@ export default function Projects() {
       id="projects"
       className="mx-auto max-w-6xl px-5 pb-12 pt-4 md:px-10 md:pb-16 md:pt-8"
     >
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
+      <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12">
         {projects.map((project) => (
           <Link
             key={project.slug}
