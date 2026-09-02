@@ -18,7 +18,7 @@ export default function Projects() {
               <img
                 src={project.coverImage}
                 alt={project.title}
-                className="h-full w-full object-cover object-top grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-[1.02]"
+                className="h-full w-full object-cover object-top transition-all duration-500 group-hover:grayscale group-hover:scale-[1.02]"
               />
             </div>
             <h3 className="text-section text-ink group-hover:underline decoration-1 underline-offset-4">

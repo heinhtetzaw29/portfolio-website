@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Hein Zaw",
+  name: "Hein (Harry) Zaw",
   initials: "HZ",
   role: "Aspiring Data Scientist & Analyst",
   location: "Sydney, Australia",
