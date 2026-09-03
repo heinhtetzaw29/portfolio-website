@@ -3,75 +3,84 @@ import { Link } from "react-router-dom";
 import { profile } from "../data";
 
 const links = [
-  { href: "/#projects", label: "Projects" },
+  { href: "/#work", label: "Work" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#about", label: "About" },
   { href: "/#contact", label: "Contact" },
-  { href: profile.resumeUrl, label: "Resume", external: true },
 ];
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-ink bg-paper">
-      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-10">
-        <Link
-          to="/"
-          className="flex h-9 w-9 items-center justify-center border border-ink font-bold text-body text-ink"
-        >
-          {profile.initials}
-        </Link>
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-paper">
+      <div className="mx-auto flex h-16 max-w-editorial items-center justify-between px-6 md:px-12">
+        <div className="flex items-baseline gap-2">
+          <Link to="/" className="text-headline-sm tracking-tight text-ink hover:text-accent">
+            {profile.name}
+          </Link>
+          <span className="hidden text-label uppercase tracking-wider text-muted sm:inline-block">
+            {profile.mastheadTag}
+          </span>
+        </div>
 
-        <ul className="hidden items-center gap-6 md:flex">
-          {links.map((link) =>
-            link.external ? (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-label uppercase text-muted transition-colors hover:text-ink"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ) : (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-label uppercase text-muted transition-colors hover:text-ink"
-                >
-                  {link.label}
-                </a>
-              </li>
-            )
-          )}
-        </ul>
-
-        <button
-          className="text-ink md:hidden"
-          onClick={() => setOpen((o) => !o)}
-          aria-label="Toggle menu"
-        >
-          <span className="text-label uppercase">{open ? "Close" : "Menu"}</span>
-        </button>
-      </nav>
-
-      {open && (
-        <ul className="flex flex-col gap-4 border-t border-ink px-5 py-6 md:hidden">
-          {links.map((link) => (
-            <li key={link.label}>
+        <div className="flex items-center gap-6">
+          <nav className="hidden items-center gap-6 md:flex">
+            {links.map((link) => (
               <a
+                key={link.label}
                 href={link.href}
-                target={link.external ? "_blank" : undefined}
-                rel={link.external ? "noreferrer" : undefined}
-                onClick={() => setOpen(false)}
-                className="text-label uppercase text-muted hover:text-ink"
+                className="py-1 text-body-sm text-muted transition-colors hover:text-ink"
               >
                 {link.label}
               </a>
-            </li>
+            ))}
+          </nav>
+          <div className="flex items-center gap-4">
+            <a
+              href={profile.resumeUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="hidden border border-ink px-3 py-1 text-label uppercase tracking-wider text-ink transition-colors hover:bg-ink hover:text-paper sm:inline-block"
+            >
+              Resume
+            </a>
+            <div className="flex h-8 w-8 items-center justify-center border border-ink text-label text-ink">
+              {profile.initials}
+            </div>
+            <button
+              className="text-ink md:hidden"
+              onClick={() => setOpen((o) => !o)}
+              aria-label="Toggle menu"
+            >
+              <span className="text-label uppercase">{open ? "Close" : "Menu"}</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {open && (
+        <div className="flex flex-col gap-4 border-t border-line px-6 py-6 md:hidden">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="text-body-sm text-muted hover:text-ink"
+            >
+              {link.label}
+            </a>
           ))}
-        </ul>
+          <a
+            href={profile.resumeUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="text-label uppercase tracking-wider text-ink"
+          >
+            Resume
+          </a>
+        </div>
       )}
     </header>
   );
