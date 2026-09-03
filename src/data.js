@@ -2,8 +2,8 @@ export const profile = {
   name: "Hein (Harry) Zaw",
   initials: "HZ",
   mastheadTag: "/ Data Analyst · Sydney",
-  heroLocation: "Sydney, New South Wales // Graduate Portfolio",
-  heroSubhead: "Data science graduate. Sydney.",
+  heroLocation: "Sydney, New South Wales",
+  heroSubhead: "Data Science Graduate",
   positioning:
     "I'm a recent Bachelor of Computing graduate from the University of Sydney, majoring in Data Science. I turn biomedical, spatial, and operational datasets into clear, production-ready tools and reproducible pipelines.",
   location: "Sydney, Australia",
