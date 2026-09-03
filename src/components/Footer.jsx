@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-editorial flex-col items-start justify-between gap-6 px-6 py-12 md:flex-row md:items-center md:px-12">
         <div className="flex flex-col gap-1">
           <p className="text-body-sm text-ink">
-            © {new Date().getFullYear()} {profile.name}. Built with precision and clarity.
+            © {new Date().getFullYear()} {profile.name}
           </p>
           <p className="text-label uppercase tracking-wider text-muted">Sydney, NSW (AEST)</p>
         </div>

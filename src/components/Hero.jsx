@@ -69,25 +69,19 @@ export default function Hero() {
       </div>
 
       <div className="lg:col-span-5">
-        <div className="border border-line bg-card p-2">
-          <div className="aspect-[4/5] w-full overflow-hidden bg-surface">
-            {hasPhoto ? (
-              <img
-                src={profile.headshotUrl}
-                alt={profile.name}
-                onError={() => setImgFailed(true)}
-                className="h-full w-full object-cover"
-              />
-            ) : (
-              <div className="flex h-full w-full items-center justify-center text-headline-lg text-muted">
-                {profile.initials}
-              </div>
-            )}
-          </div>
-          <div className="flex items-center justify-between px-1 pt-2 text-label uppercase text-muted">
-            <span>H. Zaw // USYD '25</span>
-            <span>Sydney, Australia</span>
-          </div>
+        <div className="aspect-[4/5] w-full overflow-hidden bg-surface">
+          {hasPhoto ? (
+            <img
+              src={profile.headshotUrl}
+              alt={profile.name}
+              onError={() => setImgFailed(true)}
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center text-headline-lg text-muted">
+              {profile.initials}
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -46,9 +46,6 @@ export default function Navbar() {
             >
               Resume
             </a>
-            <div className="flex h-8 w-8 items-center justify-center border border-ink text-label text-ink">
-              {profile.initials}
-            </div>
             <button
               className="text-ink md:hidden"
               onClick={() => setOpen((o) => !o)}
