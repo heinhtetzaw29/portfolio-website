@@ -9,16 +9,11 @@ export const profile = {
   linkedin: "https://linkedin.com/in/hzaw29",
   resumeUrl: "/resume.pdf",
   headshotUrl: "/assets/headshot.jpg",
-  about: `I'm a Data Science graduate from the University of Sydney (Bachelor of
-    Computing, majoring in Data Science), specialising in predictive modelling
-    and analytical storytelling — bridging the gap between complex datasets
-    and actionable insight through clean, rigorous methodology. I have
-    hands-on experience across data analysis, machine learning, and dashboard
-    reporting; in a previous operations role, my analysis of occupancy trends
-    contributed to a ~5% reduction in off-season expenditure. I hold
-    certifications in Python and data analysis from IBM, and I'm eager to
-    bring an analytical, proactive approach to a team that wants to make more
-    data-informed decisions.`,
+  about: `I'm a Data Science graduate from the University of Sydney, with a
+    Bachelor of Computing majoring in Data Science. I turn messy datasets into
+    clear, useful insight. At a Sydney hotel, I analysed occupancy trends and
+    cut off-season costs by 5%. I hold Python and data analysis certifications
+    from IBM. Now I want to help a team make sharper, data-backed decisions.`,
 };
 
 export const skills = [
@@ -63,9 +58,9 @@ export const projects = [
     caseStudyNumber: "001",
     title: "Biomedical ML Pipeline & Investment Analysis",
     summary:
-      "Applying machine learning to biomedical data to form a commercial investment recommendation, balancing model performance against real-world market viability.",
+      "I applied machine learning to biomedical data and built a commercial investment recommendation. The analysis weighed model performance against real market viability.",
     description:
-      "University of Sydney capstone (supervised by Accenture), 6-person team. Built and tuned logistic regression classifiers, standardised a model-building workflow across four algorithms, and applied five-fold cross-validation to achieve over 0.9 accuracy on gene expression classifiers. Presented the final R Shiny dashboard to stakeholders, translating model trade-offs into investment insight.",
+      "University of Sydney capstone, supervised by Accenture, six-person team. I built and tuned the logistic regression classifiers and set the model-building workflow for all four algorithms. Five-fold cross-validation pushed gene expression classifiers past 0.9 accuracy. I presented the final R Shiny dashboard to stakeholders and turned model trade-offs into investment insight.",
     tags: ["R", "Python", "Machine Learning", "R Shiny", "limma"],
     coverImage: "/assets/projects/biomed-shiny-landing.png",
     githubUrl: "",
@@ -79,17 +74,17 @@ export const projects = [
       sections: [
         {
           heading: "Data Acquisition & Preprocessing",
-          body: "Gene expression data (three GEO series, 277 cancer / 25 normal samples) and methylation data (five GEO series, 1,032 samples) were merged, batch-effect corrected with ComBat, and undersampled to balance classes. A separate external dataset was held out for validation, batch corrected independently to test true generalisation.",
+          body: "I merged gene expression data (three GEO series, 277 cancer and 25 normal samples) with methylation data (five GEO series, 1,032 samples). I corrected batch effects with ComBat and undersampled to balance classes. For validation, I held out a separate external dataset and batch corrected it on its own, to test real generalisation.",
         },
         {
           heading: "Model Architecture & Workflow",
-          body: "I built and tuned the logistic regression classifiers and defined the standardised model-building workflow used across the team, ensuring Logistic Regression, Random Forest, k-NN, and XGBoost were all trained and evaluated on a consistent, comparable basis — top differentially expressed/methylated features via limma, five-fold cross-validation, and a shared set of evaluation metrics (accuracy, AUC, sensitivity, specificity, kappa).",
+          body: "I built and tuned the logistic regression classifiers. I also set the standardised workflow the whole team used: top differentially expressed or methylated features from limma, five-fold cross-validation, and one shared set of metrics (accuracy, AUC, sensitivity, specificity, kappa). Logistic Regression, Random Forest, k-NN, and XGBoost all ran on that same basis.",
           image: "/assets/projects/biomed-cv-performance.png",
           imageCaption: "Cross-validation performance across all four models, by data type.",
         },
         {
           heading: "Unified Multi-Omics Model",
-          body: "A Multi-Omics Factor Analysis (MOFA) model was trained on paired gene expression and methylation samples to test whether combining modalities improved predictive power over either alone.",
+          body: "I trained a Multi-Omics Factor Analysis (MOFA) model on paired gene expression and methylation samples, to test whether combining both beat either alone.",
           image: "/assets/projects/biomed-external-performance.png",
           imageCaption: "External (held-out) performance comparing the best single-modality models against MOFA.",
         },
@@ -98,13 +93,13 @@ export const projects = [
         stat: "0.94",
         statLabel: "Out-of-sample accuracy",
         statDescription:
-          "Gene expression MOFA predictions on external data, with sensitivity and specificity both above 0.9 — the strongest-performing approach in the study.",
+          "Gene expression MOFA predictions on external data. Sensitivity and specificity both topped 0.9, the strongest result in the study.",
         secondaryStats: [
           { label: "CV Accuracy (Gene Expression)", value: "> 0.90" },
           { label: "Kappa Range", value: "0.74 – 0.95" },
         ],
         insight:
-          "The highest-performing classifier did not correspond to the strongest investment opportunity — gene expression profiling remains the safer, more established choice, while methylation profiling was recommended as the better investment given its lower cost and steeper projected market growth (13.6% CAGR vs 5%). This reframed the team's final recommendation, and I led the stakeholder presentation translating that trade-off for a non-technical investor audience.",
+          "The top-performing classifier was not the best investment. Gene expression profiling stayed the safer, established choice. Methylation profiling won our recommendation instead, thanks to its lower cost and steeper market growth (13.6% CAGR versus 5%). That trade-off reframed our final recommendation, and I led the stakeholder presentation that explained it to a non-technical investor audience.",
       },
       dashboardImages: [
         { src: "/assets/projects/biomed-shiny-landing.png", caption: "Landing page: instructions and market comparison." },
@@ -117,9 +112,9 @@ export const projects = [
     caseStudyNumber: "002",
     title: "Sydney Urban Data Platform",
     summary:
-      "A normalised spatial database integrating 7 open Greater Sydney datasets, surfacing relationships between amenity, transport access, and demographics.",
+      "I built a normalised spatial database from 7 open Greater Sydney datasets, to surface links between amenity, transport access, and demographics.",
     description:
-      "Co-designed a normalised PostgreSQL/PostGIS database in a 3-person team, integrating 7 open Greater Sydney government datasets into a single spatially indexed schema. Spatially joined ~880 car-share bay locations to ABS SA2 boundaries and built interactive Folium heatmaps and choropleths across 360 SA2 regions.",
+      "Three-person team. I co-designed a normalised PostgreSQL/PostGIS database that merged 7 open Greater Sydney government datasets into one spatially indexed schema. I joined roughly 880 car-share bay locations to ABS SA2 boundaries, then built interactive Folium heatmaps and choropleths across all 360 SA2 regions.",
     tags: ["PostgreSQL/PostGIS", "SQL", "Python", "Pandas", "GeoPandas", "Folium"],
     coverImage: "/assets/projects/sydney-heatmap.jpg",
     githubUrl: "",
@@ -133,30 +128,30 @@ export const projects = [
       sections: [
         {
           heading: "Database Design & Integration",
-          body: "Co-designed and implemented a normalised PostgreSQL/PostGIS database in a 3-person team, integrating 7 open Greater Sydney government datasets — businesses, transport stops, population, income, polling places, bike parking, and car-share bays — into a single spatially indexed relational schema.",
+          body: "In a three-person team, I co-designed and built a normalised PostgreSQL/PostGIS database, merging 7 open Greater Sydney government datasets (businesses, transport stops, population, income, polling places, bike parking, and car-share bays) into one spatially indexed relational schema.",
         },
         {
           heading: "Spatial Joins & Composite Scoring",
-          body: "I sourced and integrated the project's only GeoJSON dataset, spatially joining ~880 car-share bay locations to ABS SA2 boundaries in PostGIS, then computed a per-region z-score that was folded into the team's composite \"bustling neighbourhood\" scoring pipeline.",
+          body: "I sourced and integrated the project's only GeoJSON dataset. I joined roughly 880 car-share bay locations to ABS SA2 boundaries in PostGIS, then computed a per-region z-score and folded it into our composite \"bustling neighbourhood\" score.",
           image: "/assets/projects/sydney-sa2-scores.jpg",
           imageCaption: "Per-SA2 composite score classification (Low → Extreme) across 360 regions.",
         },
         {
           heading: "Exploratory Analysis",
-          body: "Queried the integrated dataset with SQL and built exploratory Python/Pandas analysis alongside interactive Folium heatmaps, surfacing relationships between business density, transport access, and demographics across Sydney.",
+          body: "I queried the integrated dataset with SQL and ran exploratory analysis in Python and Pandas. Interactive Folium heatmaps then surfaced links between business density, transport access, and demographics across Sydney.",
         },
       ],
       results: {
         stat: "r ≈ 0.03",
         statLabel: "Amenity vs. income correlation",
         statDescription:
-          "Correlation analysis across 360 SA2 regions found almost no relationship between neighbourhood amenity score and median household income — challenging an assumption the team started with.",
+          "Correlation analysis across all 360 SA2 regions found almost no link between neighbourhood amenity score and median household income. That result challenged an assumption we started with.",
         secondaryStats: [
           { label: "Datasets Integrated", value: "7" },
           { label: "Car-Share Bays Joined", value: "~880" },
         ],
         insight:
-          "Contributed to correlation analysis and interactive Folium choropleths across all 360 SA2 regions, which found almost no relationship between neighbourhood amenity score and median household income (r ≈ 0.03) — showing that amenity-rich areas in Sydney aren't reserved for higher-income households.",
+          "I contributed to the correlation analysis and the interactive Folium choropleths across all 360 SA2 regions. The result: almost no link between neighbourhood amenity score and median household income (r ≈ 0.03). Amenity-rich areas in Sydney are not reserved for higher-income households.",
       },
       dashboardImages: [
         { src: "/assets/projects/sydney-heatmap.jpg", caption: "Business/transport/demographic density heatmap." },
@@ -169,7 +164,7 @@ export const projects = [
     comingSoon: true,
     title: "Fine-Tuning an LLM for Text-to-SQL",
     summary:
-      "Fine-tuning an open-weight LLM to translate natural language into SQL against a real public dataset schema — eval-first methodology, LoRA fine-tuning, and a full failure analysis.",
+      "I'm fine-tuning an open-weight LLM to turn natural language into SQL, against a real public dataset schema. Eval-first methodology, LoRA fine-tuning, and a full failure analysis.",
     tags: ["LLM Fine-Tuning", "Text-to-SQL", "LoRA", "Evaluation"],
   },
 ];

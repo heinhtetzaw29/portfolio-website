@@ -29,8 +29,8 @@ export default function Contact() {
 
       <h2 className="mt-10 text-section uppercase text-ink">Get in Touch</h2>
       <p className="mt-4 max-w-xl text-body text-subtle">
-        Interested in collaborating, or have a question about my work? I'm open to internships,
-        graduate roles, and interesting projects.
+        Have a project in mind, or a question about my work? I'm open to internships, graduate
+        roles, and interesting projects.
       </p>
 
       <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
