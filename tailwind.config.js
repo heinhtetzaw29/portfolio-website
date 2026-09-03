@@ -38,7 +38,7 @@ export default {
         DEFAULT: "0px",
       },
       maxWidth: {
-        editorial: "88rem",
+        editorial: "72rem",
       },
     },
   },

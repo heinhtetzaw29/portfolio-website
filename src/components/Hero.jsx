@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="mx-auto flex max-w-editorial flex-col items-start gap-6 border-b border-line px-6 pb-16 pt-24 md:px-12 md:pb-24 md:pt-32"
+      className="mx-auto flex max-w-editorial flex-col items-start gap-6 border-b border-line px-6 py-16 md:px-12 md:py-24"
     >
       <div className="flex max-w-3xl flex-col gap-2">
         <p className="text-label uppercase tracking-wider text-muted">{profile.heroLocation}</p>

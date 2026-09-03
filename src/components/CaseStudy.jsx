@@ -18,7 +18,7 @@ export default function CaseStudy() {
   const next = linkable[(index + 1) % linkable.length];
 
   return (
-    <main className="mx-auto flex max-w-editorial flex-col gap-16 px-6 pb-24 pt-24 md:px-12 md:pt-32">
+    <main className="mx-auto flex max-w-editorial flex-col gap-16 px-6 pb-24 pt-8 md:px-12">
       {/* Breadcrumb */}
       <nav className="flex flex-col gap-4 sm:flex-row sm:items-baseline sm:justify-between">
         <Link

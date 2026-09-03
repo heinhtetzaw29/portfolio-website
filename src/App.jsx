@@ -10,10 +10,12 @@ export default function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects/:slug" element={<CaseStudy />} />
-      </Routes>
+      <div className="pt-16">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects/:slug" element={<CaseStudy />} />
+        </Routes>
+      </div>
       <Footer />
     </BrowserRouter>
   );
