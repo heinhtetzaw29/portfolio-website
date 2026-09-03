@@ -1,7 +1,7 @@
 export const profile = {
   name: "Hein (Harry) Zaw",
   initials: "HZ",
-  mastheadTag: "/ Data Analyst · Sydney",
+  mastheadTag: "/ Data Science Portfolio",
   heroLocation: "Sydney, New South Wales",
   heroSubhead: "Data Science Graduate",
   positioning:
