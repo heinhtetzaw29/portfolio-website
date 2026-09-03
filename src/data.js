@@ -33,10 +33,10 @@ export const experience = [
     title: "News Reporter & Operations Coordinator",
     org: "BCBG",
     location: "Sydney, NSW",
-    period: "Nov 2024 – Present",
+    period: "Nov 2024 – Aug 2026",
     bullets: [
-      "I research, write, and deliver weekly news segments on Myanmar affairs for Sydney's Burmese-speaking community.",
-      "I track and optimise funding from government grants and the station across budget periods, and present weekly editorial and funding briefings to the station head.",
+      "I researched, wrote, and delivered weekly news segments on Myanmar affairs for Sydney's Burmese-speaking community.",
+      "I tracked and optimised funding from government grants and the station across budget periods, and presented weekly editorial and funding briefings to the station head.",
     ],
   },
   {
@@ -53,9 +53,9 @@ export const experience = [
     title: "Muay Thai Coach (Kids)",
     org: "Cortex MMA",
     location: "Sydney, NSW",
-    period: "Oct 2022 – Present",
+    period: "Oct 2022 – Aug 2026",
     bullets: [
-      "I design and deliver weekly classes for children, building age-appropriate training plans and tracking individual progress.",
+      "I designed and delivered weekly classes for children, building age-appropriate training plans and tracking individual progress.",
     ],
   },
 ];
