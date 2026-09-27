@@ -3,7 +3,10 @@ import { projects } from "../data";
 
 function ProjectCard({ project }) {
   return (
-    <article className="grid grid-cols-1 items-start gap-8 border border-line bg-card p-6 lg:grid-cols-12 md:p-8">
+    <Link
+      to={`/projects/${project.slug}`}
+      className="group grid grid-cols-1 items-start gap-8 border border-line bg-card p-6 shadow-none transition-all duration-200 hover:-translate-y-1 hover:bg-surface hover:shadow-xl lg:grid-cols-12 md:p-8"
+    >
       <div className="flex h-full flex-col justify-between gap-8 lg:col-span-5">
         <div className="flex flex-col gap-4">
           <div className="flex items-center justify-between gap-2">
@@ -24,12 +27,9 @@ function ProjectCard({ project }) {
           </div>
         </div>
         <div className="border-t border-line pt-4">
-          <Link
-            to={`/projects/${project.slug}`}
-            className="inline-flex items-center gap-2 text-label font-semibold uppercase tracking-wider text-accent transition-colors hover:text-accent-deep"
-          >
+          <span className="inline-flex items-center gap-2 text-label font-semibold uppercase tracking-wider text-accent transition-colors group-hover:text-accent-deep">
             View Case Study →
-          </Link>
+          </span>
         </div>
       </div>
       <div className="overflow-hidden border border-line bg-surface lg:col-span-7">
@@ -39,7 +39,7 @@ function ProjectCard({ project }) {
           className="h-full w-full object-cover object-top"
         />
       </div>
-    </article>
+    </Link>
   );
 }
 
