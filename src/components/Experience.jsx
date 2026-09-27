@@ -6,16 +6,8 @@ export default function Experience() {
       id="experience"
       className="mx-auto max-w-editorial border-b border-line px-6 py-16 md:px-12 md:py-24"
     >
-      <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-12">
-        <div className="md:col-span-4">
-          <h2 className="text-headline-md text-ink">03 / Experience & Background</h2>
-        </div>
-        <div className="flex items-end md:col-span-8">
-          <p className="max-w-xl text-body-md text-muted">
-            A track record in community broadcast journalism, commercial operations analysis, and
-            physical coaching.
-          </p>
-        </div>
+      <div className="mb-16">
+        <h2 className="text-headline-md text-ink">03 / Experience & Background</h2>
       </div>
 
       <div className="ml-3 flex flex-col gap-12 border-l border-line pl-6 md:ml-4 md:pl-12">
