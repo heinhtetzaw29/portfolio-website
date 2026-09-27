@@ -78,9 +78,6 @@ export default function Projects() {
     <section id="work" className="mx-auto max-w-editorial border-b border-line px-6 py-16 md:px-12 md:py-24">
       <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-12">
         <div className="md:col-span-4">
-          <span className="mb-1 block text-label uppercase tracking-widest text-muted">
-            Portfolio Matrix
-          </span>
           <h2 className="text-headline-md text-ink">01 / Selected Work</h2>
         </div>
         <div className="flex items-end md:col-span-8">

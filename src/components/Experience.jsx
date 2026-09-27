@@ -8,9 +8,6 @@ export default function Experience() {
     >
       <div className="mb-16 grid grid-cols-1 gap-6 md:grid-cols-12">
         <div className="md:col-span-4">
-          <span className="mb-1 block text-label uppercase tracking-widest text-muted">
-            Career Timeline
-          </span>
           <h2 className="text-headline-md text-ink">03 / Experience & Background</h2>
         </div>
         <div className="flex items-end md:col-span-8">

@@ -4,9 +4,6 @@ export default function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-editorial border-b border-line px-6 py-16 md:px-12 md:py-24">
       <div className="mb-12">
-        <span className="mb-1 block text-label uppercase tracking-widest text-muted">
-          Capability Matrix
-        </span>
         <h2 className="text-headline-md text-ink">02 / Technical Skills</h2>
       </div>
 
