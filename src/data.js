@@ -107,7 +107,7 @@ export const projects = [
   {
     slug: "biomedical-ml-pipeline",
     caseStudyNumber: "001",
-    sysTag: "[SYS.01] // BIOMEDICAL",
+    sysTag: "[PROJECT.01] // BIOMEDICAL",
     contextTag: "Accenture Supervised",
     classification: "Biomedical Data Science · Investment Analysis",
     title: "Biomedical ML Pipeline & Investment Analysis",
@@ -189,7 +189,7 @@ export const projects = [
   {
     slug: "sydney-urban-data-platform",
     caseStudyNumber: "002",
-    sysTag: "[SYS.02] // URBAN ANALYTICS",
+    sysTag: "[PROJECT.02] // URBAN ANALYTICS",
     contextTag: "University of Sydney",
     classification: "Spatial Data Engineering · Urban Analytics",
     title: "Sydney Urban Data Platform",
@@ -269,7 +269,7 @@ export const projects = [
   {
     slug: "text-to-sql-fine-tuning",
     comingSoon: true,
-    sysTag: "[SYS.03] // NLP",
+    sysTag: "[PROJECT.03] // NLP",
     contextTag: "In Progress",
     title: "Fine-Tuning an LLM for Text-to-SQL",
     summary:
