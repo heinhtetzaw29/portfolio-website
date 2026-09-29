@@ -30,32 +30,44 @@ export const profile = {
 
 export const experience = [
   {
-    title: "News Reporter & Operations Coordinator",
-    org: "BCBG",
-    location: "Sydney, NSW",
-    period: "Nov 2024 – Aug 2026",
-    bullets: [
-      "I researched, wrote, and delivered weekly news segments on Myanmar affairs for Sydney's Burmese-speaking community.",
-      "I tracked and optimised funding from government grants and the station across budget periods, and presented weekly editorial and funding briefings to the station head.",
-    ],
-  },
-  {
     title: "Operations Analyst Intern",
     org: "City Golf Resort Hotel",
     location: "Yangon, Myanmar",
     period: "Dec 2023 – Feb 2024",
     bullets: [
-      "I turned reservation and property management data into occupancy insights using SQL and Excel, and my recommendations contributed to a ~5% reduction in off-season expenditure.",
-      "I built and maintained a centralised Excel dashboard tracking weekly and monthly KPIs (occupancy, room utilisation, F&B revenue) for department heads.",
+      "I turned reservation and property management system data into actionable insights using SQL and Excel, identifying seasonal occupancy trends that supported resource allocation recommendations adopted by the operations team and contributed to a ~5% reduction in off-season expenditure.",
+      "I built and maintained a centralised Excel dashboard tracking weekly and monthly KPIs, including occupancy rates, room utilisation, and F&B revenue, for recurring reporting and ad-hoc analysis to department heads.",
+      "I partnered with operations stakeholders to understand business needs, producing analysis that fed directly into management decision-making and performance reviews.",
     ],
   },
   {
-    title: "Muay Thai Coach (Kids)",
+    title: "Operations Coordinator",
+    org: "BCBG",
+    location: "Sydney, NSW",
+    period: "Nov 2024 – Aug 2026",
+    bullets: [
+      "I tracked and optimised funding from government grants and the radio station across budget periods, and maintained equipment and asset records as part of channel operations.",
+      "I built and maintained a direct working relationship with the station head, presenting weekly editorial proposals and consolidated funding briefings that shaped programming decisions and resource allocation across the channel.",
+      "I managed end-to-end guest relationships, from outreach and scheduling through to on-air and remote interviews.",
+    ],
+  },
+  {
+    title: "Muay Thai Coach",
     org: "Cortex MMA",
     location: "Sydney, NSW",
     period: "Oct 2022 – Aug 2026",
     bullets: [
-      "I designed and delivered weekly classes for children, building age-appropriate training plans and tracking individual progress.",
+      "I designed and delivered weekly classes for children, developing age-appropriate training plans, tracking progress, and providing feedback.",
+    ],
+  },
+  {
+    title: "Administrative Assistant",
+    org: "Genius Empire Co",
+    location: "Yangon, Myanmar",
+    period: "Feb 2020 – Nov 2021",
+    bullets: [
+      "I streamlined office workflows by implementing a digital filing system and standardised templates, reducing document retrieval time.",
+      "I processed invoices, expense reports, and purchase orders, and supported HR onboarding and employee records.",
     ],
   },
 ];
